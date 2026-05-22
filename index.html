@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="description" content="Portfolio of Ghazal Jahanbaz - ICT Student, Creator, and Professional Athlete.">
-  <meta name="keywords" content="Ghazal Jahanbaz, Content Creator, JAMK, Peer Tutor, Athlete, Handball, Finland">
+  <meta name="description" content="Ghazal Jahanbaz — ICT Student, Content Creator, JAMKO Peer Tutor & Professional Athlete.">
   <meta name="author" content="Ghazal Jahanbaz">
-
   <title>Ghazal Jahanbaz</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- فونت بسیار شیک و مینیمال Plus Jakarta Sans برای یک دیزاین نوردیک -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
+    <img src="" alt="Photo" id="lbImg">
+  </div>
+
   <nav id="navbar">
     <div class="nav-container">
       <div class="logo">Ghazal JH<span class="dot">.</span></div>
@@ -36,188 +37,452 @@
   </nav>
 
   <main>
-    <!-- HERO SECTION (MINIMAL & COOL) -->
+
     <header id="home" class="hero-section">
       <div class="hero-container">
         <div class="hero-content">
-          <p class="hero-intro">Welcome to my space</p>
+          <p class="hero-eyebrow">Welcome to my space</p>
           <h1>I am Ghazal Jahanbaz</h1>
-          <!-- Dynamic Typing Effect Area -->
-          <h2 class="typing-container">a <span id="dynamic-text">Tutor</span><span class="cursor">|</span></h2>
-          
-          <p class="hero-description">Bridging elite athletic discipline, student leadership, and visual storytelling into technology and community building.</p>
-          
-          <!-- Social Icons Right in Hero -->
+          <div class="typing-container">
+            <span>a&nbsp;</span>
+            <span id="dynamic-text">Tutor</span>
+            <span class="cursor-blink">|</span>
+          </div>
+          <p class="hero-desc">
+            Bridging elite athletic discipline, student leadership, and creative visual storytelling
+            into technology and community building — based in Jyväskylä, Finland.
+          </p>
           <div class="hero-socials">
-            <a href="https://www.linkedin.com/in/ghazal-jahanbaz" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/ghazaljahanbaz" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/jamk_talent_boost" target="_blank" title="Instagram Work"><i class="fa-brands fa-instagram"></i></a>
-            <a href="mailto:ah2523@student.jamk.fi" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/ghazal-jahanbaz" target="_blank" rel="noopener" data-tooltip="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/ghazaljahanbaz" target="_blank" rel="noopener" data-tooltip="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/YOUR_HANDLE" target="_blank" rel="noopener" data-tooltip="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@YOUR_HANDLE" target="_blank" rel="noopener" data-tooltip="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="mailto:ah2523@student.jamk.fi" data-tooltip="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
           </div>
         </div>
-        <div class="hero-image-wrapper">
-          <div class="hero-img-blob">
-            <img src="images/photo1.jpg" alt="Ghazal Jahanbaz" class="hero-img">
+        <div class="hero-image-wrapper reveal delay-2">
+          <div class="img-frame">
+            <img src="images/profile.jpg" alt="Ghazal Jahanbaz" class="hero-img"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder" style="display:none;">
+              <i class="fa-regular fa-image"></i>
+              <span>Your Photo Here</span>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- SECTION 1: EDUCATION -->
     <section id="education" class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-number">01</span>
-          <h2 class="section-title">Education</h2>
+        <div class="section-header reveal">
+          <span class="section-number">01 / Education</span>
+          <h2 class="section-title">Academic Path</h2>
+          <p class="section-subtitle">Turning curiosity into qualifications — from Iran to Finland.</p>
         </div>
-        <div class="education-grid">
-          <div class="edu-card">
+        <div class="edu-timeline">
+          <div class="edu-item reveal delay-1">
             <span class="edu-year">2025 — Present</span>
-            <h3>B.Eng in Information & Communications Technology</h3>
-            <p class="edu-inst">JAMK University of Applied Sciences, Jyväskylä</p>
-            <p class="edu-details">Focusing on digital tools, software logic, system architectures, and technology platforms to build modern user experiences.</p>
+            <h3>Bachelor of Engineering — Information & Communications Technology</h3>
+            <p class="edu-place">JAMK University of Applied Sciences · Jyväskylä, Finland</p>
+            <p class="edu-desc">Developing skills across software systems, digital tools, and modern technology platforms. Actively involved in campus life as a JAMKO peer tutor, supporting international students in their transition to Finnish university life.</p>
+            <div class="edu-tags">
+              <span class="tag-pill">ICT</span>
+              <span class="tag-pill">Software Development</span>
+              <span class="tag-pill">Digital Tools</span>
+              <span class="tag-pill">JAMKO Tutor</span>
+            </div>
+          </div>
+          <div class="edu-item reveal delay-2">
+            <span class="edu-year">2017 — 2021</span>
+            <h3>Bachelor's Degree — Physical Education & Sport Sciences</h3>
+            <p class="edu-place">University of Sport Sciences · Tehran, Iran</p>
+            <p class="edu-desc">Studied the science of athletic performance, team dynamics, and coaching methodology — a foundation that underpins both my professional handball career and my event coordination skills.</p>
+            <div class="edu-tags">
+              <span class="tag-pill">Sports Science</span>
+              <span class="tag-pill">Coaching</span>
+              <span class="tag-pill">Team Dynamics</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 2: SPORT -->
     <section id="sport" class="section bg-dim">
       <div class="container">
-        <div class="section-header">
-          <span class="section-number">02</span>
-          <h2 class="section-title">Sport</h2>
+        <div class="section-header reveal">
+          <span class="section-number">02 / Sport</span>
+          <h2 class="section-title">Professional Athlete</h2>
+          <p class="section-subtitle">Ten years of elite handball at national and international level.</p>
         </div>
-        <div class="sport-content">
-          <div class="sport-text">
+        <div class="sport-layout">
+          <div class="sport-text reveal delay-1">
             <h3>Professional Handball Player</h3>
-            <p class="sport-subtitle">Iran National Team & Super League (2015 — 2025)</p>
-            <p>Ten years of competing at the highest international and national levels, including the World Championship camps. This elite background trained me in high-pressure teamwork, intense self-discipline, and on-site execution—making me perfectly suited for active, dynamic event coordination.</p>
+            <p class="sport-sub">Iran National Team & Super League · 2015 — 2025</p>
+            <div class="sport-stat-row">
+              <div class="stat-box">
+                <span class="stat-num">10</span>
+                <span class="stat-label">Years Pro</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">1</span>
+                <span class="stat-label">World Champ.</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">🥇</span>
+                <span class="stat-label">Super League</span>
+              </div>
+            </div>
+            <p>A decade at the highest level of competitive handball — from domestic Super League matches to representing Iran on the World Championship stage. Elite sport taught me that success is built in the spaces between performances: in preparation, trust, and the ability to stay composed under pressure.</p>
+            <p>These qualities don't stay on the court. They show up in every team project, every event I coordinate, and every group I lead.</p>
           </div>
-          <div class="sport-gallery">
-            <div class="gallery-item"><img src="images/photo2.jpg" alt="Handball Action"></div>
-            <div class="gallery-item"><img src="images/photo3.jpg" alt="Team Connection"></div>
+          <div class="sport-grid reveal delay-2">
+            <div class="photo-item" style="height:420px;">
+              <img src="images/sport1.jpg" alt="Handball"
+                   onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder-box\' style=\'height:100%\'><i class=\'fa-solid fa-volleyball\'></i><span>sport1.jpg</span></div>'">
+            </div>
+            <div class="photo-item" style="height:200px;">
+              <img src="images/sport2.jpg" alt="Team"
+                   onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder-box\' style=\'height:100%\'><i class=\'fa-solid fa-users\'></i><span>sport2.jpg</span></div>'">
+            </div>
+            <div class="photo-item" style="height:200px;">
+              <img src="images/sport3.jpg" alt="Action"
+                   onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder-box\' style=\'height:100%\'><i class=\'fa-solid fa-medal\'></i><span>sport3.jpg</span></div>'">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 3: TEACHING & LEADERSHIP -->
     <section id="teaching" class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-number">03</span>
-          <h2 class="section-title">Teaching & Leadership</h2>
+        <div class="section-header reveal">
+          <span class="section-number">03 / Teaching & Leadership</span>
+          <h2 class="section-title">Guiding & Growing</h2>
+          <p class="section-subtitle">From language classrooms to student halls — leading with empathy and expertise.</p>
         </div>
         <div class="teaching-grid">
-          <div class="minimal-card">
-            <div class="card-icon"><i class="fa-solid fa-users"></i></div>
-            <h3>JAMK Peer Tutor</h3>
-            <p>Guiding new international students, leading group integrations, and organizing student union and campus life activities to make Jyväskylä feel like home.</p>
+          <div class="t-card reveal delay-1">
+            <div class="t-icon"><i class="fa-solid fa-users"></i></div>
+            <h3>JAMKO Peer Tutor & Mentor</h3>
+            <p>Supporting new international students as they navigate Finnish university life — running group integration sessions, offering one-on-one guidance, and making sure every newcomer feels genuinely at home in Jyväskylä.</p>
           </div>
-          <div class="minimal-card">
-            <div class="card-icon"><i class="fa-solid fa-language"></i></div>
+          <div class="t-card reveal delay-2">
+            <div class="t-icon"><i class="fa-solid fa-language"></i></div>
             <h3>IELTS English Instructor</h3>
-            <p>Coached 50+ language learners to hit their target band scores. Developed advanced competencies in external communication, event promotion, and professional consulting.</p>
+            <p>Coached 50+ learners to their target band scores across Reading, Writing, Listening, and Speaking. Managing my own schedule and adapting to individual learning styles sharpened my communication and consultancy skills.</p>
+          </div>
+          <div class="t-card reveal delay-3">
+            <div class="t-icon"><i class="fa-solid fa-camera"></i></div>
+            <h3>Social Media Content Creator</h3>
+            <p>Creating and managing content across multiple platforms — spanning fashion, lifestyle, and community themes. Passionate about photography and video editing; I handle the full creative cycle from concept to publish.</p>
+          </div>
+          <div class="t-card reveal delay-4">
+            <div class="t-icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <h3>Customer Experience & Operations</h3>
+            <p>Two years as the primary face of KAI Cafe in Tehran — managing high-volume service, resolving customer concerns in real time, and keeping a positive atmosphere under pressure.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 4: PHOTOGRAPHY WORK (AESTHETIC GALLERY) -->
-    <section id="photography" class="section bg-dim">
+    <section class="section bg-dim">
       <div class="container">
-        <div class="section-header">
-          <span class="section-number">04</span>
-          <h2 class="section-title">Photography & Creative Media</h2>
+        <div class="section-header reveal">
+          <span class="section-number">04 / Skills</span>
+          <h2 class="section-title">What I Bring</h2>
         </div>
-        <p class="gallery-intro-text">A visual collection of moments captured through my lens, focusing on aesthetic compositions, portrait editing, and short-form storytelling.</p>
-        
-        <!-- Tab Sub-sections -->
-        <div class="photo-categories-container">
-          <div class="photo-category-block">
-            <h3><i class="fa-solid fa-user-astronaut"></i> Editorial & Portraiture</h3>
-            <p class="cat-desc">Creative concepts, outdoor aesthetics, and lighting edits featuring my model friends.</p>
-            <div class="mini-gallery">
-              <div class="photo-box"><img src="images/model1.jpg" alt="Portrait Work 1"></div>
-              <div class="photo-box"><img src="images/model2.jpg" alt="Portrait Work 2"></div>
+        <div class="skills-layout">
+          <div class="reveal delay-1">
+            <div class="skill-item">
+              <div class="skill-label"><span>Content Creation & Social Media</span><span class="skill-pct">90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Photography & Video Editing</span><span class="skill-pct">85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Event Planning & Coordination</span><span class="skill-pct">82%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>English Communication</span><span class="skill-pct">95%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Teaching & Mentorship</span><span class="skill-pct">88%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+            </div>
+          </div>
+          <div class="reveal delay-2">
+            <p class="tools-title">Tools & Platforms</p>
+            <div class="tools-grid">
+              <span class="tool-chip"><i class="fa-brands fa-instagram"></i> Instagram</span>
+              <span class="tool-chip"><i class="fa-brands fa-tiktok"></i> TikTok</span>
+              <span class="tool-chip"><i class="fa-brands fa-youtube"></i> YouTube</span>
+              <span class="tool-chip"><i class="fa-solid fa-camera"></i> Photography</span>
+              <span class="tool-chip"><i class="fa-solid fa-film"></i> Video Editing</span>
+              <span class="tool-chip"><i class="fa-brands fa-figma"></i> Figma</span>
+              <span class="tool-chip"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="tool-chip"><i class="fa-brands fa-microsoft"></i> MS Office</span>
+              <span class="tool-chip"><i class="fa-solid fa-language"></i> IELTS</span>
+              <span class="tool-chip"><i class="fa-solid fa-people-group"></i> Teamwork</span>
+            </div>
+            <div style="margin-top:2.5rem;">
+              <p class="tools-title">Languages</p>
+              <div class="edu-tags" style="margin-top:0.8rem;">
+                <span class="tag-pill">🇬🇧 English — Professional</span>
+                <span class="tag-pill">🇮🇷 Persian — Native</span>
+                <span class="tag-pill">🇫🇮 Finnish — A2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="photography" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number">05 / Photography & Creative Media</span>
+          <h2 class="section-title">Through My Lens</h2>
+        </div>
+        <p class="gallery-intro reveal delay-1">
+          I shoot with a dedicated camera and craft visual stories that feel authentic.
+          From editorial portrait sessions with my model friend to quiet cat photography
+          and lifestyle captures — each frame is intentional.
+        </p>
+        <div class="photo-categories">
+
+          <div class="cat-block reveal">
+            <div class="cat-header">
+              <h3>Editorial & Portraiture</h3>
+              <span class="cat-count">Model photography · outdoor aesthetics · lighting edits</span>
+            </div>
+            <p class="cat-desc">Creative concept shoots featuring my model friend — focused on mood, composition, and natural light.</p>
+            <div class="masonry">
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/model1.jpg" alt="Portrait 1" onerror="this.parentElement.outerHTML='<div class=\'photo-ph taller\'><i class=\'fa-solid fa-user\'></i><span>model1.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Portrait Series</span></div>
+              </div>
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/model2.jpg" alt="Portrait 2" onerror="this.parentElement.outerHTML='<div class=\'photo-ph tall\'><i class=\'fa-solid fa-user\'></i><span>model2.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Outdoor Light</span></div>
+              </div>
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/model3.jpg" alt="Portrait 3" onerror="this.parentElement.outerHTML='<div class=\'photo-ph taller\'><i class=\'fa-solid fa-user\'></i><span>model3.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Editorial</span></div>
+              </div>
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/model4.jpg" alt="Portrait 4" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-user\'></i><span>model4.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Fashion</span></div>
+              </div>
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/model5.jpg" alt="Portrait 5" onerror="this.parentElement.outerHTML='<div class=\'photo-ph tall\'><i class=\'fa-solid fa-user\'></i><span>model5.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Natural Light</span></div>
+              </div>
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/model6.jpg" alt="Portrait 6" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-user\'></i><span>model6.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Close-up</span></div>
+              </div>
             </div>
           </div>
 
-          <div class="photo-category-block">
-            <h3><i class="fa-solid fa-cat"></i> Feline & Mood Photography</h3>
-            <p class="cat-desc">Capturing swift movements, cozy lighting, and the distinct characters of cats.</p>
-            <div class="mini-gallery">
-              <div class="photo-box"><img src="images/cat1.jpg" alt="Cat Photography 1"></div>
-              <div class="photo-box"><img src="images/cat2.jpg" alt="Cat Photography 2"></div>
+          <div class="cat-block reveal">
+            <div class="cat-header">
+              <h3>Feline & Mood Photography</h3>
+              <span class="cat-count">Cats · cozy light · character captures</span>
+            </div>
+            <p class="cat-desc">Swift movements, quiet moments, and the distinct personalities of cats — captured with patience and a steady hand.</p>
+            <div class="masonry">
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/cat1.jpg" alt="Cat 1" onerror="this.parentElement.outerHTML='<div class=\'photo-ph tall\'><i class=\'fa-solid fa-cat\'></i><span>cat1.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Feline</span></div>
+              </div>
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/cat2.jpg" alt="Cat 2" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-cat\'></i><span>cat2.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Mood</span></div>
+              </div>
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/cat3.jpg" alt="Cat 3" onerror="this.parentElement.outerHTML='<div class=\'photo-ph taller\'><i class=\'fa-solid fa-cat\'></i><span>cat3.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Golden Hour</span></div>
+              </div>
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/cat4.jpg" alt="Cat 4" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-cat\'></i><span>cat4.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Character</span></div>
+              </div>
             </div>
           </div>
 
-          <div class="photo-category-block">
-            <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Lifestyle & Content Design</h3>
-            <p class="cat-desc">Social media graphics, dynamic student event teasers, and daily design aesthetics.</p>
+          <div class="cat-block reveal">
+            <div class="cat-header">
+              <h3>Lifestyle & Content Design</h3>
+              <span class="cat-count">Daily aesthetics · events · visual storytelling</span>
+            </div>
+            <p class="cat-desc">Social media content, student event coverage, and everyday scenes — visual work designed to connect and engage.</p>
+            <div class="masonry">
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/life1.jpg" alt="Lifestyle 1" onerror="this.parentElement.outerHTML='<div class=\'photo-ph taller\'><i class=\'fa-solid fa-wand-magic-sparkles\'></i><span>life1.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Lifestyle</span></div>
+              </div>
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/life2.jpg" alt="Lifestyle 2" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-wand-magic-sparkles\'></i><span>life2.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Content</span></div>
+              </div>
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/life3.jpg" alt="Lifestyle 3" onerror="this.parentElement.outerHTML='<div class=\'photo-ph tall\'><i class=\'fa-solid fa-wand-magic-sparkles\'></i><span>life3.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Event Coverage</span></div>
+              </div>
+              <div class="masonry-item" onclick="openLightbox(this)">
+                <img src="images/life4.jpg" alt="Lifestyle 4" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-wand-magic-sparkles\'></i><span>life4.jpg</span></div>'">
+                <div class="photo-overlay"><span class="overlay-label">Aesthetic</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-dim">
+      <div class="container">
+        <div class="contact-wrap reveal">
+          <h2>Let's connect<br>and create.</h2>
+          <p>Open to event coordination, social media collaborations, photography projects, and any creative or community-driven opportunity in Finland.</p>
+          <div class="contact-btns">
+            <a href="mailto:ah2523@student.jamk.fi" class="btn-primary">
+              <i class="fa-solid fa-envelope" style="margin-right:0.5rem;"></i>Get In Touch
+            </a>
+            <a href="https://www.linkedin.com/in/ghazal-jahanbaz" target="_blank" class="btn-outline">
+              <i class="fa-brands fa-linkedin-in" style="margin-right:0.5rem;"></i>LinkedIn
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <div class="contact-box">
-          <h2>Let's connect and create.</h2>
-          <p>Always open to managing events, crafting social strategies, and engineering clean experiences.</p>
-          <a href="mailto:ah2523@student.jamk.fi" class="minimal-contact-btn">Get In Touch</a>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Ghazal Jahanbaz. Minimalist & Purposeful 🖤</p>
+    <div class="footer-inner">
+      <span>© 2026 Ghazal Jahanbaz — Minimalist & Purposeful.</span>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/ghazal-jahanbaz" target="_blank">LinkedIn</a>
+        <a href="https://github.com/ghazaljahanbaz" target="_blank">GitHub</a>
+        <a href="mailto:ah2523@student.jamk.fi">Email</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- DYNAMIC TYPING JAVASCRIPT -->
   <script>
-    const words = ["Tutor", "Programmer", "IELTS Teacher", "Professional Handball Player"];
-    let i = 0;
-    let timer;
+    const dot  = document.getElementById('cursorDot');
+    const ring = document.getElementById('cursorRing');
+    let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
 
-    function typingEffect() {
-      let word = words[i].split("");
-      var loopTyping = function() {
-        if (word.length > 0) {
-          document.getElementById('dynamic-text').innerHTML += word.shift();
-        } else {
-          setTimeout(deletingEffect, 2000);
-          return false;
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX; mouseY = e.clientY;
+      dot.style.left = mouseX + 'px';
+      dot.style.top  = mouseY + 'px';
+    });
+
+    (function animateRing() {
+      ringX += (mouseX - ringX) * 0.12;
+      ringY += (mouseY - ringY) * 0.12;
+      ring.style.left = ringX + 'px';
+      ring.style.top  = ringY + 'px';
+      requestAnimationFrame(animateRing);
+    })();
+
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        ring.style.transform = 'translate(-50%,-50%) scale(1.6)';
+        dot.style.transform  = 'translate(-50%,-50%) scale(0)';
+      });
+      el.addEventListener('mouseleave', () => {
+        ring.style.transform = 'translate(-50%,-50%) scale(1)';
+        dot.style.transform  = 'translate(-50%,-50%) scale(1)';
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          entry.target.querySelectorAll('.bar-fill').forEach(bar => {
+            bar.style.width = bar.dataset.width + '%';
+          });
         }
-        timer = setTimeout(loopTyping, 100);
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    const words = ["Tutor", "Programmer", "IELTS Teacher", "Content Creator", "Professional Handball Player"];
+    let wordIndex = 0;
+
+    function typeWord() {
+      const el = document.getElementById('dynamic-text');
+      const word = words[wordIndex].split('');
+      el.textContent = '';
+      let i = 0;
+      const type = () => {
+        if (i < word.length) { el.textContent += word[i++]; setTimeout(type, 80); }
+        else setTimeout(deleteWord, 2200);
       };
-      loopTyping();
+      type();
     }
 
-    function deletingEffect() {
-      let word = words[i].split("");
-      var loopDeleting = function() {
-        if (word.length > 0) {
-          word.pop();
-          document.getElementById('dynamic-text').innerHTML = word.join("");
+    function deleteWord() {
+      const el = document.getElementById('dynamic-text');
+      const del = () => {
+        if (el.textContent.length > 0) {
+          el.textContent = el.textContent.slice(0, -1);
+          setTimeout(del, 45);
         } else {
-          if (words.length > i + 1) {
-            i++;
-          } else {
-            i = 0;
-          }
-          setTimeout(typingEffect, 500);
-          return false;
+          wordIndex = (wordIndex + 1) % words.length;
+          setTimeout(typeWord, 400);
         }
-        timer = setTimeout(loopDeleting, 60);
       };
-      loopDeleting();
+      del();
     }
 
-    typingEffect();
+    typeWord();
+
+    const lightbox = document.getElementById('lightbox');
+    const lbImg    = document.getElementById('lbImg');
+    const lbClose  = document.getElementById('lbClose');
+
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      if (!img || img.naturalWidth === 0) return;
+      lbImg.src = img.src;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    lbClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    }
   </script>
+
 </body>
 </html>
