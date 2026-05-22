@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <meta name="description" content="Portfolio of Ghazal Jahanbaz, a Developer and Professional Handball Athlete based in Finland.">
-  <meta name="keywords" content="Ghazal Jahanbaz, Web Developer, Portfolio, Handball Athlete, JAMK University">
+  <meta name="description" content="Portfolio of Ghazal Jahanbaz, an ICT Student, Content Creator, and Professional Athlete based in Finland.">
+  <meta name="keywords" content="Ghazal Jahanbaz, Content Creator, JAMK, Peer Tutor, Athlete, Handball, Finland">
   <meta name="author" content="Ghazal Jahanbaz">
 
-  <title>Ghazal Jahanbaz Portfolio</title>
+  <title>Ghazal Jahanbaz | Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,24 +24,27 @@
       <div class="logo">Ghazal JH.</div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#achievements">Handball</a></li>
+        <li><a href="#handball">Handball</a></li>
+        <li><a href="#campus">Campus Life</a></li>
+        <li><a href="#creativity">Creativity</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#media">Media</a></li>
         <li><a href="#contact" class="btn-nav">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
+    <!-- HERO SECTION -->
     <header id="home" class="hero-section">
       <div class="hero-container">
         <div class="hero-content">
           <h1>Hi, I'm <span class="highlight">Ghazal</span></h1>
-          <h2>Developer & Pro Athlete</h2>
-          <p>Bringing the discipline of a professional athlete to the world of software development.</p>
-          <a href="#contact" class="btn btn-white">Contact Me</a>
+          <h2>ICT Student · Creator · Pro Athlete</h2>
+          <p>Bringing elite athletic discipline, student mentorship, and visual storytelling into the world of tech and community building.</p>
+          <div class="hero-buttons">
+            <a href="#creativity" class="btn btn-purple">View My Work</a>
+            <a href="#contact" class="btn btn-white">Contact Me</a>
+          </div>
         </div>
         <div class="hero-image-wrapper">
           <img src="images/photo1.jpg" alt="Ghazal Jahanbaz" class="hero-img">
@@ -49,144 +52,177 @@
       </div>
     </header>
 
-    <section id="about" class="section">
-      <h2 class="section-title">About Me</h2>
-      <div class="card about-text-card">
-        <p style="font-size: 1.15rem; text-align: center; line-height: 1.8;">
-          "Hi, I am a 22-year-old JAMK University student aiming to become a professional developer. believing that discipline in sports translates to cleaner, more efficient code."
-        </p>
+    <!-- SECTION 1: ATHLETIC CAREER -->
+    <section id="handball" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Elite Performance</span>
+        <h2 class="section-title">Handball Career</h2>
       </div>
-    </section>
-
-    <section id="achievements" class="section">
-      <h2 class="section-title">Handball Career</h2>
+      
       <div class="grid-container">
+        <div class="card achievement-card">
+          <div class="icon-box"><i class="fa-solid fa-earth-europe"></i></div>
+          <h3>World Championship</h3>
+          <p class="highlight-text">National Team Camp</p>
+          <p class="small-text">10 Years representing Iran at the highest international levels.</p>
+        </div>
         <div class="card achievement-card">
           <div class="icon-box"><i class="fa-solid fa-trophy"></i></div>
           <h3>Premier League</h3>
           <p class="highlight-text">1st Place Champion</p>
-          <p class="small-text">Iran Women's Premier League</p>
+          <p class="small-text">Gold Medalist in the Iran Women's Premier League.</p>
         </div>
         <div class="card achievement-card">
           <div class="icon-box"><i class="fa-solid fa-medal"></i></div>
           <h3>1st Division League</h3>
           <p class="highlight-text">Silver Medalist</p>
-          <p class="small-text">Iran National Handball League</p>
+          <p class="small-text">National Handball League Podium Finish.</p>
         </div>
-        <div class="card achievement-card">
-          <div class="icon-box"><i class="fa-solid fa-earth-europe"></i></div>
-          <h3>World Championship</h3>
-          <p class="highlight-text">National Team Camp</p>
-          <p class="small-text">Preparation for Serbia 2022</p>
+      </div>
+
+      <!-- Action Gallery right inside Athletic Section -->
+      <div class="photo-gallery">
+        <div class="photo-item">
+          <img src="images/photo2.jpg" alt="Handball Action 1">
+          <div class="photo-overlay"><span>Match Highlights</span></div>
+        </div>
+        <div class="photo-item">
+          <img src="images/photo3.jpg" alt="Handball Action 2">
+          <div class="photo-overlay"><span>Team Captain & Leadership</span></div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <h2 class="section-title">Technical Skills</h2>
+    <!-- SECTION 2: ACADEMIC & CAMPUS LEADERSHIP -->
+    <section id="campus" class="section bg-light">
+      <div class="section-header">
+        <span class="section-subtitle">Education & Community</span>
+        <h2 class="section-title">Academic & Leadership</h2>
+      </div>
+
+      <div class="grid-container">
+        <div class="card ielts-card">
+          <div class="badge bg-jamko">JAMKO Leader</div>
+          <h3>JAMK Peer Tutor</h3>
+          <p class="card-date">2025 – Present</p>
+          <p>Guiding international students through academic integration, managing student groups, and organizing on-campus activities and integration events.</p>
+        </div>
+
+        <div class="card ielts-card">
+          <div class="badge bg-degree">B.Eng Degree</div>
+          <h3>ICT Student</h3>
+          <p class="card-date">JAMK University of Applied Sciences</p>
+          <p>Developing robust foundational skills in information systems, digital infrastructures, software logic, and professional communication tools.</p>
+        </div>
+
+        <div class="card ielts-card">
+          <div class="badge bg-ielts">IELTS Consultant</div>
+          <h3>English Instructor</h3>
+          <p class="card-date">50+ Students Coached</p>
+          <p>Preparing learners for international academic tests. Specializing in advanced speaking/writing strategies and cross-cultural correspondence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CONTENT CREATION & PHOTOGRAPHY (NEW & AESTHETIC) -->
+    <section id="creativity" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Visual Storytelling</span>
+        <h2 class="section-title">Content Creation & Media</h2>
+      </div>
+
+      <div class="creative-portfolio-grid">
+        <div class="creative-text-block card">
+          <h3><i class="fa-solid fa-camera-retro"></i> Capturing Moments, Building Audiences</h3>
+          <p>As a freelance creator, I manage the entire digital lifecycle: brainstorming unique visual concepts, shooting with high-end dedicated cameras, professional video editing, and tailoring content for multi-platform engagement.</p>
+          <ul class="creative-bullets">
+            <li><i class="fa-solid fa-check"></i> High-quality event coverage and product photography</li>
+            <li><i class="fa-solid fa-film"></i> Engaging short-form video production (Reels, TikToks, Shorts)</li>
+            <li><i class="fa-solid fa-chart-line"></i> Audience growth through consistent, aesthetic asset design</li>
+          </ul>
+        </div>
+
+        <!-- Placeholder for your media/photography samples -->
+        <div class="media-showcase-box">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/shW9i6k8cB0" 
+              title="Inspiration Showcase" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+             iframe>
+          </div>
+          <div class="video-caption">
+            <h4><i class="fa-solid fa-bolt"></i> Mindset Spotlight</h4>
+            <p>Discipline, creative leaps, and visual precision are what drive both my sports background and content creation workflow.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hobbies-wrapper card">
+        <h3>Interests & Lifestyle</h3>
+        <div class="hobbies-tags">
+          <span class="tag"><i class="fa-solid fa-gamepad"></i> Gaming & Tech</span>
+          <span class="tag"><i class="fa-solid fa-dumbbell"></i> CrossFit & Fitness</span>
+          <span class="tag"><i class="fa-solid fa-language"></i> Finnish Language (A2)</span>
+          <span class="tag"><i class="fa-solid fa-dog"></i> Animal Volunteering</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: TECHNICAL SKILLS -->
+    <section id="skills" class="section bg-light">
+      <div class="section-header">
+        <span class="section-subtitle">Competencies</span>
+        <h2 class="section-title">Skills Overview</h2>
+      </div>
+      
       <div class="grid-container skills-grid">
         <div class="card skill-card">
           <div class="skill-info">
-            <span><i class="fa-brands fa-html5 skill-icon"></i> HTML & CSS</span>
+            <span><i class="fa-solid fa-photo-film skill-icon"></i> Media Production & Editing</span>
+            <span class="skill-percent">95%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 95%; background: #a855f7;"></div></div>
+        </div>
+
+        <div class="card skill-card">
+          <div class="skill-info">
+            <span><i class="fa-solid fa-users-gear skill-icon"></i> Event & Student Management</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 90%; background: #ec4899;"></div></div>
+        </div>
+
+        <div class="card skill-card">
+          <div class="skill-info">
+            <span><i class="fa-brands fa-html5 skill-icon"></i> Web Development (HTML/CSS)</span>
             <span class="skill-percent">90%</span>
           </div>
           <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
         </div>
+
         <div class="card skill-card">
           <div class="skill-info">
-            <span><i class="fa-brands fa-python skill-icon"></i> Python</span>
+            <span><i class="fa-brands fa-python skill-icon"></i> Python Programming</span>
             <span class="skill-percent">75%</span>
           </div>
           <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
         </div>
-        <div class="card skill-card">
-          <div class="skill-info">
-            <span><i class="fa-brands fa-linux skill-icon"></i> Linux</span>
-            <span class="skill-percent">65%</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div>
-        </div>
       </div>
     </section>
 
-    <section id="teaching" class="section">
-      <h2 class="section-title">Leadership & Languages</h2>
-      <div class="grid-container">
-        <div class="card ielts-card">
-          <div class="badge" style="background: #a855f7;">Leadership</div>
-          <h3>JAMK Tutor</h3>
-          <p style="margin-top: 1rem; font-size: 0.95rem;">
-            Guiding new students, organizing events, and facilitating integration into university life at JAMK University.
-          </p>
-        </div>
-        <div class="card ielts-card">
-          <div class="badge" style="background: #ec4899;">Experience</div>
-          <h3>IELTS Tutor</h3>
-          <p style="margin-top: 1rem; font-size: 0.95rem;">
-            Experienced English tutor helping students achieve their target scores with focus on Speaking & Writing.
-          </p>
-        </div>
-        <div class="card ielts-card">
-          <div class="badge">English Proficiency</div>
-          <h3>IELTS Academic</h3>
-          <div class="score-box">
-            <span>Band Score</span>
-            <strong>7</strong> 
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="media" class="section">
-      <h2 class="section-title">Media & Gallery</h2>
-      
-      <div class="media-top-grid">
-        <div class="video-wrapper">
-          <iframe 
-            src="https://www.youtube.com/embed/shW9i6k8cB0?si=StartAtTheJump" 
-            title="Miles Morales Leap of Faith" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-          </iframe>
-          
-          <div class="video-caption">
-            <h3><i class="fa-solid fa-spider"></i> My Favorite Character: Miles Morales</h3>
-            <p>
-              This specific scene ("Leap of Faith") captures the essence of Miles. It's not just about the powers; it's about overcoming fear and taking that leap. A true inspiration for my athlete mindset.
-            </p>
-          </div>
-        </div>
-        </div>
-
-        <div class="card hobbies-card">
-          <h3>Other Interests</h3>
-          <ul class="hobby-list">
-            <li><i class="fa-solid fa-gamepad"></i> Gaming</li>
-            <li><i class="fa-solid fa-dumbbell"></i> CrossFit</li>
-            <li><i class="fa-solid fa-language"></i> Learning Finnish</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="photo-gallery">
-        <div class="photo-item">
-          <img src="images/photo2.jpg" alt="Handball Action 1">
-        </div>
-        <div class="photo-item">
-          <img src="images/photo3.jpg" alt="Handball Action 2">
-        </div>
-      </div>
-    </section>
-
+    <!-- SECTION 5: CONTACT -->
     <section id="contact" class="section">
       <div class="contact-card">
-        <h2 class="section-title text-white">Get in Touch</h2>
+        <h2 class="section-title text-white">Let's Create Together</h2>
+        <p class="contact-p">Ready to bring energy, structure, and high-quality media content to your next project.</p>
         <div class="contact-actions">
-          <a href="mailto:jahanbazghazal@gmail.com" class="btn btn-white">
-            <i class="fa-solid fa-envelope"></i> Email Me
+          <a href="mailto:ah2523@student.jamk.fi" class="btn btn-white">
+            <i class="fa-solid fa-envelope"></i> Email Jamk
           </a>
-          <a href="https://www.linkedin.com/in/ghazal-jahanbaz-5b034037b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="btn btn-outline">
-            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          <a href="https://www.linkedin.com/in/ghazal-jahanbaz" target="_blank" class="btn btn-outline">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
           </a>
         </div>
       </div>
@@ -194,7 +230,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Ghazal Jahanbaz. Made with 💜</p>
+    <p>&copy; 2026 Ghazal Jahanbaz. Built with Aesthetic Purpose 💜</p>
   </footer>
 
 </body>
