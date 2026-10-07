@@ -30,6 +30,7 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#sport">Sport</a></li>
         <li><a href="#teaching">Teaching and work Experience</a></li>
+        <li><a href="#bakery">Bakery</a></li>
         <li><a href="#photography">Photography and content Creator</a></li>
         <li><a href="#contact" class="btn-nav">Contact</a></li>
       </ul>
@@ -191,6 +192,67 @@
             <div class="t-icon"><i class="fa-solid fa-mug-hot"></i></div>
             <h3>Customer Experience & Operations</h3>
             <p>Two years as the primary face of KAI Cafe in Tehran — managing high-volume service, resolving customer concerns in real time, and keeping a positive atmosphere under pressure.</p>
+          </div>
+        </div>
+
+        <div class="bakery-block reveal" id="bakery">
+          <div class="bakery-top">
+            <div class="bakery-text">
+              <div class="t-icon"><i class="fa-solid fa-cake-candles"></i></div>
+              <span class="edu-year">Iran · about 1 year, before moving to Finland</span>
+              <h3>Founder & Baker — Home Bakery</h3>
+              <p class="bakery-lead">Small sweets, made with care and made to be shared.</p>
+              <p>I started a home bakery from my own kitchen in Iran. What began as baking for friends and family quickly grew into a real business — I ended up supplying sweets to several big chain restaurants and cafés.</p>
+              <p>I ran the bakery for about a year before moving to Finland, handling everything myself: developing recipes, baking in batches, packaging, delivering on time and keeping clients happy. Every piece had to look and taste the same as the last one — whether the order was for ten people or a full café counter.</p>
+            </div>
+            <div class="bakery-side">
+              <p class="tools-title">What I bake</p>
+              <ul class="bakery-list">
+                <li><i class="fa-solid fa-check"></i> Chocolate mini loaf cakes</li>
+                <li><i class="fa-solid fa-check"></i> Individual tiramisu cups</li>
+                <li><i class="fa-solid fa-check"></i> Cookies with ganache &amp; drizzle</li>
+                <li><i class="fa-solid fa-check"></i> Bite-size cookies for sharing</li>
+              </ul>
+              <p class="tools-title" style="margin-top:1.8rem;">Why it works for events</p>
+              <ul class="bakery-list">
+                <li><i class="fa-solid fa-cookie-bite"></i> Portion-sized sweets that are easy to grab and enjoy</li>
+                <li><i class="fa-solid fa-layer-group"></i> Batch baking with consistent size, look and taste</li>
+                <li><i class="fa-solid fa-gift"></i> Neat individual packaging and presentation</li>
+                <li><i class="fa-solid fa-clock"></i> Used to restaurant and café deadlines</li>
+              </ul>
+              <div class="edu-tags">
+                <span class="tag-pill">Entrepreneurship</span>
+                <span class="tag-pill">Restaurant &amp; Café Clients</span>
+                <span class="tag-pill">Batch Production</span>
+                <span class="tag-pill">Food Presentation</span>
+              </div>
+            </div>
+          </div>
+          <div class="bakery-grid">
+            <div class="masonry-item" onclick="openLightbox(this)">
+              <img src="images/bakery1.jpg" alt="Chocolate mini loaf cakes" loading="lazy">
+              <div class="photo-overlay"><span class="overlay-label">Mini Loaf Cakes</span></div>
+            </div>
+            <div class="masonry-item" onclick="openLightbox(this)">
+              <img src="images/bakery2.jpg" alt="Individual tiramisu cups tied with red ribbon" loading="lazy">
+              <div class="photo-overlay"><span class="overlay-label">Tiramisu Cups</span></div>
+            </div>
+            <div class="masonry-item" onclick="openLightbox(this)">
+              <img src="images/bakery3.jpg" alt="Chocolate cookies with ganache and drizzle" loading="lazy">
+              <div class="photo-overlay"><span class="overlay-label">Ganache Cookies</span></div>
+            </div>
+            <div class="masonry-item" onclick="openLightbox(this)">
+              <img src="images/bakery4.jpg" alt="Mini cakes fresh from the oven" loading="lazy">
+              <div class="photo-overlay"><span class="overlay-label">Fresh From the Oven</span></div>
+            </div>
+            <div class="masonry-item" onclick="openLightbox(this)">
+              <img src="images/bakery5.jpg" alt="A large batch of bite-size chocolate cookies with white chocolate" loading="lazy">
+              <div class="photo-overlay"><span class="overlay-label">Bite-Size, Batch-Baked</span></div>
+            </div>
+            <div class="masonry-item" onclick="openLightbox(this)">
+              <img src="images/bakery6.jpg" alt="Mini loaf cakes topped with milk and white chocolate" loading="lazy">
+              <div class="photo-overlay"><span class="overlay-label">Milk & White Chocolate</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -431,7 +493,7 @@
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-    const words = ["Tutor", "Programmer", "IELTS Teacher", "Content Creator", "Professional Handball Player"];
+    const words = ["Tutor", "Programmer", "IELTS Teacher", "Content Creator", "Home Baker", "Professional Handball Player"];
     let wordIndex = 0;
 
     function typeWord() {

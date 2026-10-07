@@ -313,6 +313,25 @@ ul { list-style: none; }
 .t-card h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: -0.2px; }
 .t-card p { color: var(--text-muted); font-size: 0.93rem; line-height: 1.7; }
 
+.bakery-block {
+  margin-top: 1.5rem; scroll-margin-top: 6rem;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 2.4rem;
+}
+.bakery-top { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; margin-bottom: 2.4rem; }
+.bakery-top > * { min-width: 0; }
+.bakery-text h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -0.3px; margin: 0.3rem 0 0.4rem; }
+.bakery-lead { font-size: 1.05rem; font-style: italic; font-weight: 300; color: var(--text) !important; margin-bottom: 1rem !important; }
+.bakery-text p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.75; margin-bottom: 0.9rem; }
+.bakery-side .tools-title { font-size: 0.95rem; margin-bottom: 0.8rem; }
+.bakery-list { display: flex; flex-direction: column; gap: 0.55rem; }
+.bakery-list li { display: flex; gap: 0.7rem; align-items: baseline; color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; }
+.bakery-list i { color: var(--text); font-size: 0.8rem; width: 1rem; flex-shrink: 0; }
+.bakery-side .edu-tags { margin-top: 1.6rem; }
+.bakery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.bakery-grid .masonry-item { margin: 0; aspect-ratio: 4 / 5; }
+.bakery-grid .masonry-item img { width: 100%; height: 100%; object-fit: cover; filter: none; }
+
 .skills-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; }
 .skill-item { margin-bottom: 1.8rem; }
 .skill-label { display: flex; justify-content: space-between; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.6rem; }
@@ -417,7 +436,8 @@ footer { border-top: 1px solid var(--border); padding: 3rem 2rem; }
   .hero-desc { margin: 0 auto 2.5rem; }
   .hero-socials { justify-content: center; }
   .hero-image-wrapper { justify-content: center; }
-  .teaching-grid { grid-template-columns: 1fr; }
+  .teaching-grid, .bakery-top { grid-template-columns: 1fr; }
+  .bakery-top { gap: 2rem; }
   .masonry { columns: 2; }
 }
 @media (max-width: 600px) {
@@ -425,6 +445,8 @@ footer { border-top: 1px solid var(--border); padding: 3rem 2rem; }
   .nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
   .section { padding: 5rem 1.2rem; }
   .masonry { columns: 1; }
+  .bakery-block { padding: 1.4rem; }
+  .bakery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
   .sport-stat-row { grid-template-columns: repeat(3,1fr); gap: 0.7rem; }
   .contact-btns { flex-direction: column; align-items: center; }
 }
