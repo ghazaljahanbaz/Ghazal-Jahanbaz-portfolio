@@ -315,22 +315,39 @@ ul { list-style: none; }
 
 .bakery-block {
   margin-top: 1.5rem; scroll-margin-top: 6rem;
-  background: var(--bg-card); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 2.4rem;
+  background: #fdf7f1; border: 1px solid #f0e2d3;
+  border-radius: 22px; padding: 2.6rem;
 }
 .bakery-top { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; margin-bottom: 2.4rem; }
 .bakery-top > * { min-width: 0; }
-.bakery-text h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -0.3px; margin: 0.3rem 0 0.4rem; }
-.bakery-lead { font-size: 1.05rem; font-style: italic; font-weight: 300; color: var(--text) !important; margin-bottom: 1rem !important; }
-.bakery-text p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.75; margin-bottom: 0.9rem; }
-.bakery-side .tools-title { font-size: 0.95rem; margin-bottom: 0.8rem; }
-.bakery-list { display: flex; flex-direction: column; gap: 0.55rem; }
-.bakery-list li { display: flex; gap: 0.7rem; align-items: baseline; color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; }
-.bakery-list i { color: var(--text); font-size: 0.8rem; width: 1rem; flex-shrink: 0; }
+.bakery-badge {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  background: #f6e3d3; color: #7a4a2b; font-size: 0.78rem; font-weight: 600;
+  padding: 0.35rem 0.9rem; border-radius: 30px; margin-bottom: 0.9rem;
+}
+.bakery-text h3 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.4px; margin: 0.3rem 0 0.1rem; color: #4a2c1a; }
+.bakery-role { font-size: 0.9rem; font-weight: 600; color: #b07850 !important; margin-bottom: 0.7rem !important; }
+.bakery-lead { font-size: 1.08rem; font-style: italic; font-weight: 400; color: #4a2c1a !important; margin-bottom: 1rem !important; }
+.bakery-text p { color: #6e5a4c; font-size: 0.95rem; line-height: 1.8; margin-bottom: 0.9rem; }
+.bakery-side { background: #fff; border: 1px solid #f0e2d3; border-radius: 18px; padding: 1.6rem 1.7rem; }
+.bakery-side .tools-title { font-size: 0.95rem; margin-bottom: 0.8rem; color: #4a2c1a; }
+.bakery-list { display: flex; flex-direction: column; gap: 0.6rem; }
+.bakery-list li { display: flex; gap: 0.7rem; align-items: baseline; color: #6e5a4c; font-size: 0.9rem; line-height: 1.5; }
+.bakery-list li span { flex-shrink: 0; width: 1.2rem; }
 .bakery-side .edu-tags { margin-top: 1.6rem; }
+.bakery-side .tag-pill { background: #fdf2e8; border-color: #f0dcc8; color: #7a4a2b; }
 .bakery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.bakery-grid .masonry-item { margin: 0; aspect-ratio: 4 / 5; }
+.bakery-grid .masonry-item { margin: 0; aspect-ratio: 4 / 5; border-radius: 16px; }
 .bakery-grid .masonry-item img { width: 100%; height: 100%; object-fit: cover; filter: none; }
+.bakery-note {
+  margin-top: 2.2rem; text-align: center;
+  background: #fff; border: 1.5px dashed #e3c9b2; border-radius: 18px; padding: 2rem 1.6rem;
+}
+.bakery-note-title { font-size: 1.25rem; font-weight: 700; color: #4a2c1a; margin-bottom: 0.5rem; }
+.bakery-note p:not(.bakery-note-title) { color: #6e5a4c; max-width: 560px; margin: 0 auto 1.4rem; line-height: 1.75; font-size: 0.95rem; }
+.btn-primary.bakery-btn { display: inline-block; background: #7a4a2b; border-radius: 30px; }
+.btn-primary.bakery-btn:hover { background: #5e3820; }
+.bakery-text .edu-year { display: block; }
 
 .skills-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; }
 .skill-item { margin-bottom: 1.8rem; }
