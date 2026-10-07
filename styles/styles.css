@@ -340,12 +340,12 @@ ul { list-style: none; }
 .bakery-grid .masonry-item { margin: 0; aspect-ratio: 4 / 5; border-radius: 16px; }
 .bakery-grid .masonry-item img { width: 100%; height: 100%; object-fit: cover; filter: none; }
 .bakery-note {
-  margin-top: 2.2rem; text-align: center;
+  margin: 0 0 2.2rem; text-align: center;
   background: #fff; border: 1.5px dashed #e3c9b2; border-radius: 18px; padding: 2rem 1.6rem;
 }
 .bakery-note-title { font-size: 1.25rem; font-weight: 700; color: #4a2c1a; margin-bottom: 0.5rem; }
 .bakery-note p:not(.bakery-note-title) { color: #6e5a4c; max-width: 560px; margin: 0 auto 1.4rem; line-height: 1.75; font-size: 0.95rem; }
-.btn-primary.bakery-btn { display: inline-block; background: #7a4a2b; border-radius: 30px; }
+.btn-primary.bakery-btn { display: inline-flex; align-items: center; margin-top: 0.4rem; background: #7a4a2b; border-radius: 30px; }
 .btn-primary.bakery-btn:hover { background: #5e3820; }
 .bakery-text .edu-year { display: block; }
 
