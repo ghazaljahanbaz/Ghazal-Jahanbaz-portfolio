@@ -14,9 +14,6 @@
 </head>
 <body>
 
-  <div class="cursor-dot" id="cursorDot"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
-
   <div class="lightbox" id="lightbox">
     <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
     <img src="" alt="Photo" id="lbImg">
@@ -25,7 +22,10 @@
   <nav id="navbar">
     <div class="nav-container">
       <div class="logo">Ghazal JH<span class="dot">.</span></div>
-      <ul class="nav-links">
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#sport">Sport</a></li>
@@ -454,34 +454,15 @@
   </footer>
 
   <script>
-    const dot  = document.getElementById('cursorDot');
-    const ring = document.getElementById('cursorRing');
-    let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
-
-    document.addEventListener('mousemove', e => {
-      mouseX = e.clientX; mouseY = e.clientY;
-      dot.style.left = mouseX + 'px';
-      dot.style.top  = mouseY + 'px';
-    });
-
-    (function animateRing() {
-      ringX += (mouseX - ringX) * 0.12;
-      ringY += (mouseY - ringY) * 0.12;
-      ring.style.left = ringX + 'px';
-      ring.style.top  = ringY + 'px';
-      requestAnimationFrame(animateRing);
-    })();
-
-    document.querySelectorAll('a, button').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        ring.style.transform = 'translate(-50%,-50%) scale(1.6)';
-        dot.style.transform  = 'translate(-50%,-50%) scale(0)';
-      });
-      el.addEventListener('mouseleave', () => {
-        ring.style.transform = 'translate(-50%,-50%) scale(1)';
-        dot.style.transform  = 'translate(-50%,-50%) scale(1)';
-      });
-    });
+    const navToggle = document.getElementById('navToggle');
+    const navLinks  = document.getElementById('navLinks');
+    function setMenu(open) {
+      navLinks.classList.toggle('open', open);
+      navToggle.setAttribute('aria-expanded', open);
+      navToggle.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+    }
+    navToggle.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
 
     window.addEventListener('scroll', () => {
       document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
