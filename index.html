@@ -14,11 +14,6 @@
 </head>
 <body>
 
-  <div class="lightbox" id="lightbox">
-    <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
-    <img src="" alt="Photo" id="lbImg">
-  </div>
-
   <nav id="navbar">
     <div class="nav-container">
       <div class="logo">Ghazal JH<span class="dot">.</span></div>
@@ -31,7 +26,6 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#photography">Beyond Code</a></li>
         <li><a href="#contact" class="btn-nav">Contact</a></li>
       </ul>
     </div>
@@ -133,7 +127,7 @@
           <div class="t-card reveal delay-1">
             <div class="t-icon"><i class="fa-solid fa-laptop-code"></i></div>
             <h3>Personal Portfolio Website</h3>
-            <p>The site you are on: a responsive, multi-section portfolio written in HTML, CSS and JavaScript, with a mobile menu, scroll animations, a photo lightbox and a typing effect. Version-controlled with Git and published with GitHub Pages.</p>
+            <p>The site you are on: a responsive, multi-section portfolio written in HTML, CSS and JavaScript, with a mobile menu, scroll animations and a typing effect. Version-controlled with Git and published with GitHub Pages.</p>
             <div class="edu-tags" style="margin-top:0.8rem;">
               <span class="tag-pill">HTML</span>
               <span class="tag-pill">CSS</span>
@@ -259,109 +253,6 @@
       </div>
     </section>
 
-    <section id="photography" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-number">05 / Beyond Code: Photography & Content</span>
-          <h2 class="section-title">Through My Lens</h2>
-        </div>
-        <p class="gallery-intro reveal delay-1">
-          I shoot with a dedicated camera and craft visual stories that feel authentic.
-          From editorial portrait sessions with my model friend to quiet cat photography
-          and lifestyle captures — each frame is intentional.
-        </p>
-        <div class="photo-categories">
-
-          <div class="cat-block reveal">
-            <div class="cat-header">
-              <h3>Editorial & Portraiture</h3>
-              <span class="cat-count">Model photography · outdoor aesthetics · lighting edits</span>
-            </div>
-            <p class="cat-desc">Creative concept shoots featuring my model friend — focused on mood, composition, and natural light.</p>
-            <div class="masonry">
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/model1.jpeg" alt="Portrait 1" onerror="this.parentElement.outerHTML='<div class=\'photo-ph taller\'><i class=\'fa-solid fa-user\'></i><span>model1.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Portrait Series</span></div>
-              </div>
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/model2.jpeg" alt="Portrait 2" onerror="this.parentElement.outerHTML='<div class=\'photo-ph tall\'><i class=\'fa-solid fa-user\'></i><span>model2.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Outdoor Light</span></div>
-              </div>
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/model3.jpeg" alt="Portrait 3" onerror="this.parentElement.outerHTML='<div class=\'photo-ph taller\'><i class=\'fa-solid fa-user\'></i><span>model3.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Editorial</span></div>
-              </div>
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/model4.jpeg" alt="Portrait 4" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-user\'></i><span>model4.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Fashion</span></div>
-              </div>
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/model5.jpeg" alt="Portrait 5" onerror="this.parentElement.outerHTML='<div class=\'photo-ph tall\'><i class=\'fa-solid fa-user\'></i><span>model5.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Natural Light</span></div>
-              </div>
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/model6.jpeg" alt="Portrait 6" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-user\'></i><span>model6.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Close-up</span></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cat-block reveal">
-            <div class="cat-header">
-              <h3>Feline & Mood Photography</h3>
-              <span class="cat-count">Cats · cozy light · character captures</span>
-            </div>
-            <p class="cat-desc">Swift movements, quiet moments, and the distinct personalities of cats — captured with patience and a steady hand.</p>
-            <div class="masonry">
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/cat1.jpeg" alt="Cat 1" onerror="this.parentElement.outerHTML='<div class=\'photo-ph tall\'><i class=\'fa-solid fa-cat\'></i><span>cat1.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Feline</span></div>
-              </div>
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/cat2.jpeg" alt="Cat 2" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-cat\'></i><span>cat2.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Mood</span></div>
-              </div>
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/cat3.jpeg" alt="Cat 3" onerror="this.parentElement.outerHTML='<div class=\'photo-ph taller\'><i class=\'fa-solid fa-cat\'></i><span>cat3.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Golden Hour</span></div>
-              </div>
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/cat4.jpeg" alt="Cat 4" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-cat\'></i><span>cat4.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Character</span></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cat-block reveal">
-            <div class="cat-header">
-              <h3>Lifestyle & Content Design</h3>
-              <span class="cat-count">Daily aesthetics · events · visual storytelling</span>
-            </div>
-            <p class="cat-desc">Social media content, student event coverage, and everyday scenes — visual work designed to connect and engage.</p>
-            <div class="masonry">
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/life1.jpeg" alt="Lifestyle 1" onerror="this.parentElement.outerHTML='<div class=\'photo-ph taller\'><i class=\'fa-solid fa-wand-magic-sparkles\'></i><span>life1.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Lifestyle</span></div>
-              </div>
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/life2.jpeg" alt="Lifestyle 2" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-wand-magic-sparkles\'></i><span>life2.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Content</span></div>
-              </div>
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/life3.jpeg" alt="Lifestyle 3" onerror="this.parentElement.outerHTML='<div class=\'photo-ph tall\'><i class=\'fa-solid fa-wand-magic-sparkles\'></i><span>life3.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Event Coverage</span></div>
-              </div>
-              <div class="masonry-item" onclick="openLightbox(this)">
-                <img src="images/life4.jpeg" alt="Lifestyle 4" onerror="this.parentElement.outerHTML='<div class=\'photo-ph\'><i class=\'fa-solid fa-wand-magic-sparkles\'></i><span>life4.jpg</span></div>'">
-                <div class="photo-overlay"><span class="overlay-label">Aesthetic</span></div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <section id="contact" class="section bg-dim">
       <div class="container">
         <div class="contact-wrap reveal">
@@ -450,26 +341,6 @@
 
     typeWord();
 
-    const lightbox = document.getElementById('lightbox');
-    const lbImg    = document.getElementById('lbImg');
-    const lbClose  = document.getElementById('lbClose');
-
-    function openLightbox(el) {
-      const img = el.querySelector('img');
-      if (!img || img.naturalWidth === 0) return;
-      lbImg.src = img.src;
-      lightbox.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    lbClose.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
-
-    function closeLightbox() {
-      lightbox.classList.remove('open');
-      document.body.style.overflow = '';
-    }
   </script>
 
 </body>
